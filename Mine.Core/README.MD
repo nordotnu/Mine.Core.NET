@@ -1,4 +1,4 @@
-﻿##Minesweeper Core:
+##Minesweeper Core:
 
 ####Game Class:
 Create an instance of a game using number of columns, rows and the number of bombs.
