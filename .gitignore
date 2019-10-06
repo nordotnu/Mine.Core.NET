@@ -4,3 +4,5 @@
 */bin
 Mine.UI
 Mine.Test
+/Mine.Test/Mine.Test.csproj
+/Mine.UI/Mine.UI.csproj
