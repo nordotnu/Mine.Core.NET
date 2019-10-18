@@ -6,12 +6,12 @@ namespace Mine.Core
     public static class Creator
     {
         public static int UsedBombs;
-        public static Field[,] CreateGame(int columns, int row, int bombs)
+        public static Field[,] CreateGame(int columns, int row, int bombs) // Returns a 2D vector of a game. (Based on the given parameters)
         {
             UsedBombs = 0;
             var chance = 100 * bombs / (columns * row);
             var fields = new Field[columns, row];
-            var random = new Random();
+            var random = new Random(); // Bombs are chance based and not static, random based on the bombs / column * row.
             for (var i = 0; i < columns; i++)
             {
                 for (var j = 0; j < row; j++)
@@ -20,7 +20,7 @@ namespace Mine.Core
                     fields[i, j].Col = i;
                     fields[i, j].Row = j;
                     var result = random.Next(0, 101);
-                    if (result < chance && UsedBombs < bombs)
+                    if (result < chance && UsedBombs < bombs) // if the chance hits then it's a bomb.
                     {
                         fields[i, j].Bomb = true;
                         UsedBombs++;
@@ -31,7 +31,7 @@ namespace Mine.Core
                     }
                 }
             }
-            for(var i = 0; i < columns; i++)
+            for(var i = 0; i < columns; i++) // Set the number for the field with not bomb.
             {
                 for(var j = 0; j < row; j++)
                 {

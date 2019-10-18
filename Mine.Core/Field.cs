@@ -11,7 +11,7 @@ namespace Mine.Core
         public int Number { get; set; }
         public bool IsOpened { get; set; } = false;
 
-        public Field[,] Open(Field[,] fields, int maxCol, int maxRow)
+        public Field[,] Open(Field[,] fields, int maxCol, int maxRow) // a method that open a field and the neighbor fields if are zero. 
         {
             
             if (Bomb != false || IsOpened != false) return fields;
