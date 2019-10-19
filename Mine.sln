@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mine.Core", "Mine.Core\Mine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mine.Test", "Mine.Test\Mine.Test.csproj", "{B7A6B39E-7624-406F-AB6C-E47577966F21}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mine.UI", "Mine.UI\Mine.UI.csproj", "{635C451F-39D5-4F96-8D4B-A6B3B3F81A5E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +18,5 @@ Global
 		{B7A6B39E-7624-406F-AB6C-E47577966F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7A6B39E-7624-406F-AB6C-E47577966F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7A6B39E-7624-406F-AB6C-E47577966F21}.Release|Any CPU.Build.0 = Release|Any CPU
-		{635C451F-39D5-4F96-8D4B-A6B3B3F81A5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{635C451F-39D5-4F96-8D4B-A6B3B3F81A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{635C451F-39D5-4F96-8D4B-A6B3B3F81A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{635C451F-39D5-4F96-8D4B-A6B3B3F81A5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
